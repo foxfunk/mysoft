@@ -1,0 +1,22 @@
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h3><a href="/home">vovler</a></h3>
+
+<center>
+<h1>Bienvenido al Login</h1>
+<%= flash[:notice]  %>
+<%= form_for :user do |f| %>
+
+<p>
+<%= f.label :nombre %>
+<%= f.text_field :nombre %>
+</p>
+<p>
+<%= f.label :password %>
+<%= f.password_field :password %>
+</p>
+<p>
+<%= f.submit 'Aceptar'%>
+</P>
+<% end %>
+
+</center>

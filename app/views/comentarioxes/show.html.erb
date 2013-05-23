@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @comentariox.nombre %>
+</p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @comentariox.titulo %>
+</p>
+
+<p>
+  <b>Comentario:</b>
+  <%= @comentariox.comentario %>
+</p>
+
+
+<%= link_to 'Edit', edit_comentariox_path(@comentariox) %> |
+<%= link_to 'Back', comentarioxes_path %>
+
+<%= link_to 'volver administracion', admin_url %>
